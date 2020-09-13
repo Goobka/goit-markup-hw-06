@@ -482,12 +482,59 @@
           </div>
           <div class="signup">
             <b class="text">Подпишитесь на рассылку</b>
+            <form class="form js-speaker-form">
+              <div class="form-field">
+                <input
+                  class="form-input"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder="E-mail"
+                />
+              </div>
+              <button type="submit">Подписаться</button>
+            </form>
           </div>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form js-speaker-form">
+          <div class="form-field">
+            <label class="form-label" for="name">Имя</label>
+            <input class="form-input" type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="mail">Почта</label>
+            <input class="form-input" type="email" name="mail" id="mail" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="comment">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+            />
+            <label class="form-label" for="agreement"
+              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+            >
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
         <button class="modal-button" data-modal-close>
           <svg class="icon-close" width="11" height="11">
             <use href="./images/sprite.svg#close"></use>
@@ -496,5 +543,20 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
