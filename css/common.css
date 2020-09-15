@@ -215,7 +215,8 @@ img {
 .join {
   margin-right: 93px;
 }
-.join .text {
+.join .text,
+.signup .text {
   color: var(--secondary-text-color);
 
   font-weight: 700;
@@ -249,13 +250,44 @@ img {
 .icon-join {
   fill: currentColor;
 }
+
+/* Signup */
+.signup .form {
+  display: flex;
+  margin-top: 20px;
+}
+.signup .form-input {
+  margin: 0;
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 358px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  background-color: var(--footer-bg-color);
+  color: rgba(255, 255, 255, 0.6);
+}
+.signup .form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.signup .button {
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 29px;
+}
+.icon-signup {
+  margin-left: 10px;
+}
 /* Button */
 .button {
-  display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
-  border: 1px solid transparent;
+  border: none;
 
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
