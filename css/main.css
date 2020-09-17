@@ -332,10 +332,10 @@
   line-height: 1.15;
   color: var(--title-text-color);
 }
-.modal .form:first-child {
+.modal-form:first-child {
   margin-top: 12px;
 }
-.modal .form-field {
+.form-label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -345,11 +345,13 @@
   font-size: 12px;
   letter-spacing: 0.01em;
 }
-.modal .form-input {
+.form-label .form-input {
   margin-top: 4px;
   padding: 12px 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.form-input {
   outline: none;
 }
 .icon-modal {
@@ -360,13 +362,19 @@
 .icon-modal {
   fill: currentColor;
 }
-.form-field:focus-within .form-input {
+.form-label:focus-within .form-input {
   border-color: var(--accent-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field:focus-within .icon-modal {
+.form-label:focus-within .icon-modal {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:required:valid {
+  border-color: var(--accent-color);
+}
+.form-input:required:valid + .icon-modal {
+  fill: var(--accent-color);
 }
 .comment {
   margin-top: 10px;
@@ -382,6 +390,7 @@
 .comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
+.comment:not(:placeholder-shown),
 .comment:focus {
   border-color: var(--accent-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
