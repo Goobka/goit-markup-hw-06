@@ -20,13 +20,13 @@
     <header class="header-section">
       <div class="container page-header">
         <nav class="navigation">
-          <a href="" class="logo">Web<span class="main">Studio</span></a>
+          <a href="#" class="logo">Web<span class="main">Studio</span></a>
           <ul class="site-nav list">
             <li class="item"><a href="./index.html" class="link">Студия</a></li>
             <li class="item">
-              <a href="" class="link current">Портфолио</a>
+              <a href="#" class="link current">Портфолио</a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
         <address class="address">
@@ -65,7 +65,7 @@
           </div>
           <ul class="apps">
             <li class="apps-item">
-              <a class="link" href="">
+              <a class="link" href="#">
                 <div class="portfolio-position">
                   <img
                     src="./images/tehnokrac.jpg"
@@ -89,7 +89,7 @@
               </a>
             </li>
             <li class="apps-item">
-              <a class="link" href="">
+              <a class="link" href="#">
                 <div class="portfolio-position">
                   <img
                     src="./images/orlean.jpg"
@@ -114,7 +114,7 @@
               </a>
             </li>
             <li class="apps-item">
-              <a class="link" href="">
+              <a class="link" href="#">
                 <div class="portfolio-position">
                   <img
                     src="./images/seafood.jpg"
@@ -139,7 +139,7 @@
               </a>
             </li>
             <li class="apps-item">
-              <a class="link" href="">
+              <a class="link" href="#">
                 <div class="portfolio-position">
                   <img
                     src="./images/prime.jpg"
@@ -164,7 +164,7 @@
               </a>
             </li>
             <li class="apps-item">
-              <a class="link" href="">
+              <a class="link" href="#">
                 <div class="portfolio-position">
                   <img
                     src="./images/boxes.jpg"
@@ -189,7 +189,7 @@
               </a>
             </li>
             <li class="apps-item">
-              <a class="link" href="">
+              <a class="link" href="#">
                 <div class="portfolio-position">
                   <img
                     src="./images/inspiration.jpg"
@@ -214,7 +214,7 @@
               </a>
             </li>
             <li class="apps-item">
-              <a class="link" href="">
+              <a class="link" href="#">
                 <div class="portfolio-position">
                   <img
                     src="./images/limited.jpg"
@@ -239,7 +239,7 @@
               </a>
             </li>
             <li class="apps-item">
-              <a class="link" href="">
+              <a class="link" href="#">
                 <div class="portfolio-position">
                   <img
                     src="./images/lab.jpg"
@@ -264,7 +264,7 @@
               </a>
             </li>
             <li class="apps-item">
-              <a class="link" href="">
+              <a class="link" href="#">
                 <div class="portfolio-position">
                   <img
                     src="./images/growing.jpg"
@@ -297,7 +297,7 @@
       <div class="container">
         <div class="footer-flex">
           <div class="left-part">
-            <a href="" class="logo">Web<span class="accent">Studio</span></a>
+            <a href="#" class="logo">Web<span class="accent">Studio</span></a>
             <address class="footer-address">
               <ul class="contacts list">
                 <li class="item post">г. Киев, пр-т Леси Украинки, 26</li>
@@ -310,28 +310,48 @@
             <b class="text">ПРИСОЕДИНЯЙТЕСЬ</b>
             <ul class="list">
               <li>
-                <a href="" aria-label="Instagram link" class="join-link">
+                <a
+                  href="#"
+                  aria-label="Instagram link"
+                  class="join-link"
+                  target="blank"
+                >
                   <svg class="icon-join" width="20" height="20">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="" aria-label="Twitter link" class="join-link">
+                <a
+                  href="#"
+                  aria-label="Twitter link"
+                  class="join-link"
+                  target="blank"
+                >
                   <svg class="icon-join" width="20" height="20">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="" aria-label="Facebook link" class="join-link">
+                <a
+                  href="#"
+                  aria-label="Facebook link"
+                  class="join-link"
+                  target="blank"
+                >
                   <svg class="icon-join" width="20" height="20">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="" aria-label="Linkedin link" class="join-link">
+                <a
+                  href="#"
+                  aria-label="Linkedin link"
+                  class="join-link"
+                  target="blank"
+                >
                   <svg class="icon-join" width="20" height="20">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
@@ -340,7 +360,24 @@
             </ul>
           </div>
           <div class="signup">
-            <b class="text">Подпишитесь на рассылку</b>
+            <b class="text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
+            <form class="form js-speaker-form">
+              <input
+                class="form-input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+                autocomplete="off"
+                required
+              />
+              <button class="button" type="submit">
+                Подписаться
+                <svg class="icon-signup" width="24" height="24">
+                  <use href="./images/sprite.svg#plane"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
